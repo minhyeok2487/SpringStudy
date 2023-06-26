@@ -23,6 +23,10 @@ public class Member {
     private String street;
     private String zipcode;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }
