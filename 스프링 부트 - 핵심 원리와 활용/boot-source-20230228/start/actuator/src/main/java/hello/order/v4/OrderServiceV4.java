@@ -2,8 +2,6 @@ package hello.order.v4;
 
 import hello.order.OrderService;
 import io.micrometer.core.annotation.Timed;
-import io.micrometer.core.instrument.MeterRegistry;
-import io.micrometer.core.instrument.Timer;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Random;

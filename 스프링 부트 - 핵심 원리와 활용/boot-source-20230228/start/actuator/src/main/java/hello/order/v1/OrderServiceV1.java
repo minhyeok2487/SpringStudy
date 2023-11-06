@@ -37,7 +37,7 @@ public class OrderServiceV1 implements OrderService {
         Counter.builder("my.order")
                 .tag("class", this.getClass().getName())
                 .tag("method", "cancel")
-                .description("order")
+                .description("cancel")
                 .register(registry).increment();
     }
 
